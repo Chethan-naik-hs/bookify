@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online book store</title>
+    
+
+    <!--font awesome link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--custom css file link-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container.css">
+
+</head>
+<body>
+
+<!--header section starts-->
+
+<header class="header">
+
+    <div class="header-1">
+
+        <a href="#" class="logo" style="font-size: 40px;"><i class="fas fa-book" > bookify</i></a>
+
+
+        <div class="icons">
+            <div id="search-btn" class="fas fa-search"></div>
+            <a href="cart.html" class="fas fa-shopping-cart"></a>
+            <!-- <div id="login-btn" class="fas fa-user"></div> -->
+            <a href="login.php" class="fas fa-user"></a>
+        </div>
+
+
+    </div>
+
+    <div class="header-2">
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#">featured</a>
+            <a href="#arrivals">arrivals</a>
+            <a href="#reviews">reviews</a>
+            <a href="#blogs">blogs</a>
+        </nav>
+    </div>
+</header>
+<!--header section ends-->
+
+
+<!--bottom navbar-->
+
+<nav class="bottom-navbar">
+    <a href="#home" class="fas fa-home"></a>
+    <a href="#featured" class="fas fa-list"></a>
+    <a href="#arrivals" class="fas fa-tags"></a>
+    <a href="#reviews" class="fas fa-comments"></a>
+    <a href="#blogs" class="fas fa-blogs"></a>
+</nav>
+
+<!--login form-->
+
+<div class="login-form-container">
+    <div id="close-login-btn" class="fas fa-times"></div><!--wrong mark-->
+    <form action="crud.php" method="post">
+        <h3>sign in options</h3>
+        <span>username</span>
+        <input type="email" name="" class="box" placeholder="enter your email" id="">
+        <span>password</span>
+        <input type="password" name=""  class="box" placeholder="enter your password"id="">
+         <div class="checkbox">
+            <input type="checkbox" name="" id="remember me">
+            <label for="remember me">remember-me</label>
+         </div>
+         <input type="submit" value="sign in" class="btn">
+         <!-- <p>forget password ?<a href="#">click here</a></p>
+         <p>dont have an account?<a href="#">create one</a></p> -->
+    </form>
+</div>
+<!--home section starts-->
+
+<section class="home" id="home">
+    <div class="row">
+        <div class="books-slider">
+            <div class="wrapper"></div>
+            <a href="#"><img src="image/18.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/2.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/3.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/4.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/5.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>       
+            <a href="#"><img src="image/6.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/7.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/8.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/9.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/10.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/16.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/17.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/15.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+            <a href="#"><img src="image/12.jpg" style="margin: 5px 5px 5px 5px;" alt=""></a>
+
+        </div>
+        <div class="row">
+            <div class="content">
+                <h3>upto 50% off</h3>
+                <p>"Indulge your literary cravings without breaking the bank! Dive into a world of stories with our online book store's exclusive 50% off sale—because every book lover deserves a budget-friendly adventure. Explore, discover, and stock up on your favorite reads without compromising on the thrill!"</p>
+                
+            </div>
+    </div>
+</section>
+<!--home section starts-->
+<h1 style="text-align: center;">Feautured Books</h1>
+<div class="product-container">
+    <!-- Products will be dynamically generated here -->
+</div>
+<script src="pscript.js"></script>
+<!--featured section ends-->
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<section class="newsletter">
+    <video class="video-background" autoplay muted loop>
+        <source src="image/vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="content">
+        <form action="follow.php" method="post">
+            <h3>Follow for the latest updates</h3>
+            <input type="email" name="email" placeholder="Enter your email" id="email" class="box">
+            <input type="submit" value="Follow" class="btn">
+        </form>
+    </div>
+</section>
+
+<!-- newsletter section-->
+<!-- <section class="newsletter">
+
+    <form action="">
+        <h3>follow us for latest updates</h3>
+        <input type="email" name="" placeholder="enter your email" id="" class="box">
+        <input type="submit" value="follow" class="btn">
+    </form>
+
+</section> -->
+
+ <!--end-->
+<!--arrival section -->
+<section class="arrivals" id="arrivals">
+    <h1 class="heading"><span>new arrivals</span></h1>
+    <div class="arrival-slider">
+        <div class="wrapper">
+
+            <a  href="#" class="box">
+                <div  class="image">
+                    <img  src="image/12.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/13.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/14.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/15.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/16.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+    <div class="arrival-slider">
+        <div class="wrapper">
+
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/17.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/18.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/19.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/1.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="box">
+                <div class="image">
+                    <img src="image/6.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>new arrivals</h3>
+                    <div class="price">899rs<span>900rs</span></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </a>
+            
+        </div>
+    </div>
+
+</section>
+<!--arrival sec ends-->
+
+<!--deal sec starts-->
+<section class="deal">
+    <div class="content">
+    <h3>deal of the day</h3>
+    <h1>upto 30% off</h1>
+    <p>SHOP NOW AND GET AMAZING DISCOUNTS ON THE LATEST PRODUCTS</p>
+    <a href="#product-container" class="btn">shop now</a>
+    </div>
+    <div class="image">
+        <img src="image/21.jpg" alt="">
+    </div>
+</section>
+
+<!--deal sec ends-->
+
+
+<!--review-->
+<section class="reviews" id="reviews"></section>
+<h1 class="heading"><span>client's reviews</span></h1>
+<div class="reviews-slider">
+    <div class="wrap">
+        <div class="box">
+            <img src="image/23.jpg" alt="">
+            <h3>john</h3>
+            <p>nice books,well packed </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/24.jpg" alt="">
+            <h3>Mary</h3>
+            <p>excellent free time reads </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/25.jpg" alt="">
+            <h3>lisa</h3>
+            <p>just read through in your breaks.keeps the brain tickling and active.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/26.jpg" alt="">
+            <h3>johnson</h3>
+            <p>i am still reading it </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+         <div class="box">
+            <img src="image/35.jpg" alt="">
+            <h3>sunny</h3>
+            <p>good for people loving puzzles and analysis</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div> -->
+        <div class="box">
+            <img src="image/28.jpg" alt="">
+            <h3>heena</h3>
+            <p>well packed and fast shipping</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+        <div class="box">
+            <img src="image/29.jpg" alt="">
+            <h3>charles</h3>
+            <p>genuine website to buy books </p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--review-->
+
+<!--blogs-->
+
+<section class="blogs" id="blogs">
+    <h1 class="heading"> <span>our blogs</span></h1>
+    <div class="blogs-slider">
+        <div class="wrapper">
+            <div class="box">
+            <div class="image">
+                <img src="image/30.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Cyber chapters</h3>
+                <p> Insights from our Online Bookstore</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="image/31.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>E-Reads and Beyond</h3>
+                <p>Stories from the Digital Book Nook"</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="image/32.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Byte-Sized Bibliophile</h3>
+                <p> Blogging from the Bookstore Browser"</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="image/33.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>Screen to Story</h3>
+                <p> Unveiling the Best of Our Online Bookshelf"</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        <div class="box">
+            <div class="image">
+                <img src="image/34.jpg" alt="">
+            </div>
+            <div class="content">
+                <h3>The E-Librarian's Log</h3>
+                <p>Chronicles of an Online Bookstore Explorer</p>
+                <a href="#" class="btn">read more</a>
+            </div>
+        </div>
+        </div>
+
+    </div>
+</section>
+
+<!--blogs-->
+
+
+<!--footer-->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>our locations</h3>
+            <a href="#"><i class="fas fa-map-market-alt"></i>india</a>
+            <a href="#"><i class="fas fa-map-market-alt"></i>usa</a>
+            <a href="#"><i class="fas fa-map-market-alt"></i>russia</a>
+            <a href="#"><i class="fas fa-map-market-alt"></i>america</a>
+            <a href="#"><i class="fas fa-map-market-alt"></i>africa</a>
+            <a href="#"><i class="fas fa-map-market-alt"></i>singapore</a>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>home</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>featured</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>arrivals</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>reviews</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>blogs</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>extra links</h3>
+            <a href="#"><i class="fas fa-arrow-right"></i>account info</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>orderd items</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>privacy policy</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>payment method</a>
+            <a href="#"><i class="fas fa-arrow-right"></i>our services</a>
+            
+        </div>
+
+        <div class="box">
+            <h3>contact info</h3>
+            <a href="#"><i class="fas fa-phone"></i>+919977665532</a>
+            <a href="#"><i class="fas fa-phone"></i>+919945332232</a>
+            <a href="#"><i class="fas fa-envelope"></i>ysh@gmail.com</a>
+            <img src="" class="map" alt="">
+        </div>
+    </div>
+    <div class="share">
+        <a href="#" class="fab fa-facebook-f"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+        <a href="#" class="fab fa-pinterest"></a>
+    </div>
+</section>
+
+<!--footer-->
+
+
+
+
+
+
+
+
+
+
+
+
+    <!--custum js file link-->
+    <script src="script.js"></script>
+    
+</body>
+</html>
